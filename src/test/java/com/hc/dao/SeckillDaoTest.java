@@ -2,6 +2,9 @@ package com.hc.dao;
 
 import static org.junit.Assert.*;
 
+import java.util.Date;
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.junit.Test;
@@ -35,7 +38,10 @@ public class SeckillDaoTest {
 	 */
 	@Test
 	public void testReduceNumber() {
-		
+		long seckillId=1;
+		Date killTime=new Date();
+		int reduceNumber = seckillDao.reduceNumber(seckillId, killTime);
+		System.out.println(reduceNumber);
 	}
 
 	/**
@@ -53,7 +59,8 @@ public class SeckillDaoTest {
 	 */
 	@Test
 	public void testQueryAll() {
-		fail("Not yet implemented");
+		List<Seckill> queryAll = seckillDao.queryAll(0, 10);
+		System.out.println(GsonUtil.GsonString(queryAll));
 	}
 
 }

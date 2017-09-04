@@ -1,7 +1,9 @@
 package com.hc.dao;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
 
 import com.hc.entity.Seckill;
 
@@ -22,7 +24,7 @@ public interface SeckillDao {
 	* @param killTime
 	* @return int
 	*/
-	int reduceNumber(long seckillId,Date killTime);
+	int reduceNumber(@Param("seckillId")long seckillId,@Param("killTime")Date killTime);
 	
 	/** 
 	* @Title: queryById 
@@ -35,10 +37,11 @@ public interface SeckillDao {
 	/** 
 	* @Title: queryAll 
 	* @Description: 根据偏移量查询秒杀商品列表
-	* @param offet
+	* @param offset
 	* @param limit
 	* @return List<Seckill>
+	* java 没有保存形参的记录，queryAll(int offet,int limit)  -》queryAll(arg0,arg1)
 	*/
-	List<Seckill> queryAll(int offet,int limit);
+	List<Seckill> queryAll(@Param("offset")int offset,@Param("limit")int limit);
 
 }
