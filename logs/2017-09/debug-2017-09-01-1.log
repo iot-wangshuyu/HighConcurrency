@@ -1,0 +1,131 @@
+[11:03:59:194] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[11:04:37:358] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[11:24:38:790] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[11:24:38:965] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[11:24:39:467] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[11:24:39:500] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[11:24:39:515] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:14:24:997] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:15:22:816] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:15:57:185] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:18:45:952] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:19:16:523] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:20:00:513] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:20:19:731] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:21:24:618] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:21:24:813] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:21:24:999] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:21:25:020] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:21:25:035] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:28:02:562] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:28:02:762] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:28:02:914] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:28:02:934] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:28:02:949] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:28:02:986] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:28:57:295] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:28:57:493] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:28:57:644] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:28:57:667] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:28:57:683] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:28:57:721] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:28:57:722] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:28:57:945] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:31:22:257] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:31:22:494] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:31:22:645] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:31:22:671] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:31:22:688] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:31:22:738] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:31:22:738] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:31:22:808] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:36:42:785] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:39:11:761] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:39:11:976] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:39:12:123] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:39:12:147] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:39:12:162] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:39:26:700] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:39:26:921] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:39:27:066] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:39:27:087] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:39:27:102] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:40:49:445] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:40:49:682] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:40:49:852] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:40:49:873] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:40:49:889] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:40:49:942] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:40:49:943] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:40:50:003] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:42:07:507] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:42:07:730] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:42:07:882] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:42:07:903] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:42:07:931] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:42:07:966] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:42:07:967] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:42:08:033] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:42:27:186] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:42:27:415] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:42:27:582] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:42:27:607] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:42:27:637] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:42:27:676] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:42:27:677] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:42:27:741] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:49:14:335] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:49:14:551] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:49:14:697] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:49:14:719] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:49:14:747] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:49:14:783] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:49:14:784] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:49:14:840] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:49:56:746] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:49:56:967] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:49:57:119] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:49:57:142] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:49:57:171] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:49:57:207] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:49:57:208] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:49:57:240] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:52:32:832] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:52:33:050] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:52:33:197] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:52:33:220] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:52:33:247] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:52:33:283] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:52:33:283] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:52:33:367] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:53:13:206] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:53:13:426] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:53:13:583] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:53:13:606] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:53:13:634] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:53:13:672] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:53:13:673] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:53:13:702] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:57:47:584] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:57:47:807] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:57:47:953] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:57:47:975] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:57:48:002] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:57:48:039] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:57:48:039] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:57:48:085] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[13:58:56:266] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[13:58:56:509] [DEBUG] - org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) - Cache Hit Ratio [com.shuyu.dao.MybatisDao]: 0.0
+[13:58:56:673] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: select * from t_user 
+[13:58:56:694] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: 
+[13:58:56:721] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==      Total: 9
+[13:58:56:758] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==>  Preparing: update t_user SET user_name=?,pass_word=? WHERE id=? 
+[13:58:56:759] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - ==> Parameters: tom(String), 00(String), 1(Integer)
+[13:58:56:842] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:145) - <==    Updates: 1
+[14:02:21:557] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[14:03:50:287] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[14:04:24:248] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[14:05:06:803] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[14:05:50:828] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[14:06:26:943] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[14:07:13:144] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.

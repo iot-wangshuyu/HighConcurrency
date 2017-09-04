@@ -3,38 +3,46 @@
 <mapper namespace="com.hc.dao.SuccessKilledDao">
 	<!-- 目的：为Dao接口方法提供sql语句配置 -->
 
-  <!--  <resultMap id="SuccessKilled" type="SuccessKilled">
+	<!-- <resultMap id="SuccessKilled" type="SuccessKilled">
 		<id property="seckillId" column="seckill_id" javaType="java.lang.Long"></id>
 		<result property="userPhone" column="user_phone" javaType="java.lang.Long"></result>
 		<result property="state" column="state" javaType="java.lang.String"></result>
 
 		<association property="seckill" javaType="Seckill">
-			<id property="id" column="t_id" />
-			<result property="tName" column="t_name" />
+			<id property="seckillId" column="seckill_id" javaType="java.lang.Long"></id>
+			<result property="name" column="name" javaType="java.lang.String"></result>
+			<result property="number" column="number" javaType="java.lang.Integer"></result>
+			<result property="startTime" column="start_time" javaType="java.sql.Date"></result>
+			<result property="endTime" column="end_time" javaType="java.sql.Date"></result>
+			<result property="createTime" column="create_time" javaType="java.sql.Date"></result>
+			<result property="updateTime" column="update_time" javaType="java.sql.Date"></result>
 		</association>
 	</resultMap> -->
 	<insert id="insertSuccessKill">
-	<!-- 主键冲突不报错，返回0-->
-	insert ignore into success_killed (seckill_id,user_phone) values
-	(#{seckillId},#{userPhone})
+		<!-- 主键冲突不报错，返回0 -->
+		insert ignore into success_killed (seckill_id,user_phone) values
+		(#{seckillId},#{userPhone})
 	</insert>
 
-	<select id="queryByIdWithSeckill" resultType="SuccessKilled" >
-	<!-- 根据id查询SuccessKilled并携带seckill实体 -->
-		select 
+	<select id="queryByIdWithSeckill" resultType="SuccessKilled">
+		<!-- 根据id查询SuccessKilled并携带seckill实体 -->
+		select
 		sk.seckill_id,
 		sk.user_phone;
 		sk.create_time,
 		sk.state,
-		s.seckill_id "seckill.seckill_id",
+		s.seckill_id
+		"seckill.seckill_id",
 		s.name "seckill.name",
 		s.number "seckill.number",
 		s.start_time "seckill.start_time",
 		s.end_time "seckill.end_time",
 		s.create_time "seckill.create_time" from
-		success_killed sk inner join seckill s on sk.seckill_id=s.seckill_id
-		where sk.seckill_id=#{seckillId}
+		success_killed sk inner join
+		seckill s on sk.seckill_id=s.seckill_id
+		where
+		sk.seckill_id=#{seckillId}
 	</select>
-	
+
 
 </mapper>

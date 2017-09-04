@@ -3,12 +3,23 @@
 <mapper namespace="com.hc.dao.SeckillDao">
 	<!-- 目的：为Dao接口方法提供sql语句配置 -->
 
+	<resultMap id="Seckill" type="Seckill">
+		<id property="seckillId" column="seckill_id" javaType="java.lang.Long"></id>
+		<result property="name" column="name" javaType="java.lang.String"></result>
+		<result property="number" column="number" javaType="java.lang.Integer"></result>
+		<result property="startTime" column="start_time" javaType="java.sql.Date"></result>
+		<result property="endTime" column="end_time" javaType="java.sql.Date"></result>
+		<result property="createTime" column="create_time" javaType="java.sql.Date"></result>
+		<result property="updateTime" column="update_time" javaType="java.sql.Date"></result>
+
+	</resultMap>
+
 	<update id="reduceNumber">
 		update
 		seckill
 		set
 		number=number-1
-		where seckill_id=#{seckillID}
+		where seckill_id=#{seckillId}
 		<!-- and start_time &lt;= #{killTime} -->
 
 		and start_time <![CDATA[<=]]>
@@ -21,10 +32,12 @@
 		select seckill_id,name,number,start_time,end_time,create_time from
 		seckill where seckill_id=#{seckillId}
 	</select>
-	
-	<select id="queryAll" resultType="Seckill" >
-		select seckill_id,name,number,start_time,end_time,create_time from
-		seckill order by create_time desc
+
+	<select id="queryAll" resultType="Seckill">
+		select
+		seckill_id,name,number,start_time,end_time,create_time from
+		seckill
+		order by create_time desc
 		limit #{offset},#{limit}
 	</select>
 
