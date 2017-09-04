@@ -37,7 +37,7 @@ public class SeckillDaoTest {
 	 * Test method for {@link com.hc.dao.SeckillDao#reduceNumber(long, java.sql.Date)}.
 	 */
 	@Test
-	public void testReduceNumber() {
+	public void testReduceNumber() throws Exception{
 		long seckillId=1;
 		Date killTime=new Date();
 		int reduceNumber = seckillDao.reduceNumber(seckillId, killTime);
@@ -48,7 +48,7 @@ public class SeckillDaoTest {
 	 * Test method for {@link com.hc.dao.SeckillDao#queryById(long)}.
 	 */
 	@Test
-	public void testQueryById() {
+	public void testQueryById()  throws Exception{
 		long id=1;
 		Seckill queryById = seckillDao.queryById(id);
 		System.out.println(GsonUtil.GsonString(queryById));
@@ -58,7 +58,7 @@ public class SeckillDaoTest {
 	 * Test method for {@link com.hc.dao.SeckillDao#queryAll(int, int)}.
 	 */
 	@Test
-	public void testQueryAll() {
+	public void testQueryAll()  throws Exception{
 		List<Seckill> queryAll = seckillDao.queryAll(0, 10);
 		System.out.println(GsonUtil.GsonString(queryAll));
 	}

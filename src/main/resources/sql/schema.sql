@@ -28,8 +28,8 @@ INSERT INTO seckill(NAME,number,start_time,end_time)VALUE
 
 
 CREATE TABLE `success_killed` (
-  `seckill_id` bit(1) NOT NULL,
-  `user_phone` bit(1) NOT NULL,
+  `seckill_id` bigint(1) NOT NULL,
+  `user_phone` bigint(1) NOT NULL,
   `state` tinyint(4) NOT NULL DEFAULT '-1',
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
