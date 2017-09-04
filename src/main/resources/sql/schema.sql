@@ -40,3 +40,10 @@ CREATE TABLE `success_killed` (
 
 -- 连接数据库控制台
  mysql -uroot -p123456
+ 
+ -- 为什么手写DDL
+ -- 记录每一次上线的DDL修改
+ -- 上线V1.1
+ ALTER TABLE seckill
+ DROP INDEX idx_create_time,
+ ADD index idx_c_s(`start_time`,`create_time`);
