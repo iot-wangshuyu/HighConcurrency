@@ -1,40 +1,122 @@
 package com.hc.service.impl;
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+import org.springframework.util.DigestUtils;
+
+import com.hc.dao.SeckillDao;
+import com.hc.dao.SuccessKilledDao;
 import com.hc.dto.Exposer;
 import com.hc.dto.SeckillExecution;
 import com.hc.entity.Seckill;
+import com.hc.entity.SuccessKilled;
+import com.hc.enums.SeckillStateEnum;
 import com.hc.exception.RepeatKillException;
 import com.hc.exception.SeckillCloseException;
 import com.hc.exception.SeckillException;
 import com.hc.service.SeckillService;
+import com.mysql.jdbc.log.Log;
+
+import javafx.scene.control.TextInputControl;
 
 public class SeckillServiceImpl implements SeckillService {
 
+	private SeckillDao seckilldao;
+	private SuccessKilledDao successKilledDao;
+	// md5混淆
+	private final String slat = "laldfafda";
+
 	@Override
 	public List<Seckill> getSeckillList() {
-		// TODO Auto-generated method stub
-		return null;
+		List<Seckill> list = new ArrayList<>();
+		try {
+			list = seckilldao.queryAll(0, 10);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
 	}
 
 	@Override
 	public Seckill getById(long seckillId) {
-		// TODO Auto-generated method stub
-		return null;
+		Seckill seckill = new Seckill();
+		try {
+			seckill = seckilldao.queryById(seckillId);
+		} catch (Exception e) {
+		}
+		return seckill;
 	}
 
 	@Override
 	public Exposer exportSeckillUrl(long seckillId) {
-		// TODO Auto-generated method stub
-		return null;
+		Seckill seckill = null;
+		try {
+			seckill = seckilldao.queryById(seckillId);
+		} catch (Exception e) {
+		}
+		if (seckill == null) {
+			return new Exposer(false, seckillId);
+
+		}
+		Date startTime = seckill.getStartTime();
+		Date endTime = seckill.getEndTime();
+		Date nowTime = new Date();
+		if (nowTime.getTime() < startTime.getTime() || nowTime.getTime() > endTime.getTime()) {
+			return new Exposer(false, seckillId, nowTime.getTime(), startTime.getTime(), endTime.getTime());
+		}
+		// 转换特定字符串的过程
+		String md5 = getMD5(seckillId);
+		return new Exposer(true, md5, seckillId);
 	}
 
 	@Override
 	public SeckillExecution executeSeckill(long seckillId, long userPhone, String md5)
 			throws SeckillException, RepeatKillException, SeckillCloseException {
-		// TODO Auto-generated method stub
-		return null;
+		if (md5 == null || !md5.equals(getMD5(seckillId))) {
+			throw new SeckillException("输入数据异常");
+		}
+		// 执行秒杀业务逻辑:减库存+记录购买行为
+		int updateCount = 0;
+		try {
+			updateCount = seckilldao.reduceNumber(seckillId, new Date());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		if (updateCount <= 0) {
+			// 没有更新记录，秒杀没有成功
+			throw new SeckillCloseException("秒杀结束");
+		} else {
+			// 记录购买行为
+			try {
+				int insert = successKilledDao.insertSuccessKill(seckillId, userPhone);
+				if (insert <= 0) {
+					throw new RepeatKillException("重复秒杀");
+				}
+				SuccessKilled queryByIdWithSeckill = successKilledDao.queryByIdWithSeckill(seckillId, userPhone);
+				return new SeckillExecution(seckillId,SeckillStateEnum.SUCCESS, queryByIdWithSeckill);
+			} catch (SeckillCloseException e) {
+				throw e;
+			} catch (RepeatKillException e) {
+				throw e;
+			} catch (Exception e) {
+				// Log.d();
+				throw new SeckillException("秒杀业务异常" + e.getMessage());
+			}
+		}
+	}
+
+	/**
+	 * md5加密
+	 * 
+	 * @param seckillId
+	 * @return
+	 */
+	private String getMD5(long seckillId) {
+		String base = seckillId + "/" + slat;
+		String md5 = DigestUtils.md5DigestAsHex(base.getBytes());
+		return md5;
 	}
 
 }
