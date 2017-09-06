@@ -3,7 +3,14 @@ package com.hc.dto;
 import com.hc.entity.SuccessKilled;
 import com.hc.enums.SeckillStateEnum;
 
-//秒杀成功执行后的结果
+/**
+ * @Title: SeckillExecution.java 
+ * @Package com.hc.dto 
+ * @Description: //秒杀成功执行后的结果
+ * @author Shuyu.Wang
+ * @date Creation time: 2017年9月6日
+ * @version V1.0   
+ */
 public class SeckillExecution {
 	
 	private long seckillId;

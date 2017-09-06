@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
 import com.hc.dao.SeckillDao;
@@ -17,13 +19,23 @@ import com.hc.exception.RepeatKillException;
 import com.hc.exception.SeckillCloseException;
 import com.hc.exception.SeckillException;
 import com.hc.service.SeckillService;
-import com.mysql.jdbc.log.Log;
 
-import javafx.scene.control.TextInputControl;
 
+/**
+ * @Title: SeckillServiceImpl.java 
+ * @Package com.hc.service.impl 
+ * @Description: TODO
+ * @author Shuyu.Wang
+ * @date Creation time: 2017年9月6日
+ * @version V1.0   
+ */
+//@Component所有组件
+@Service
 public class SeckillServiceImpl implements SeckillService {
-
+    //注入service依赖
+	@Autowired
 	private SeckillDao seckilldao;
+	@Autowired
 	private SuccessKilledDao successKilledDao;
 	// md5混淆
 	private final String slat = "laldfafda";

@@ -1,6 +1,14 @@
 package com.hc.dto;
 
-//暴露秒杀地址DTO
+
+/**
+ * @Title: Exposer.java 
+ * @Package com.hc.dto 
+ * @Description: //暴露秒杀地址DTO
+ * @author Shuyu.Wang
+ * @date Creation time: 2017年9月6日
+ * @version V1.0   
+ */
 public class Exposer {
 	//是否开启秒杀
 	private boolean exposed;

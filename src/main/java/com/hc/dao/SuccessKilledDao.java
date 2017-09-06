@@ -29,6 +29,7 @@ public interface SuccessKilledDao {
 	* @Title: queryByIdWithSeckill 
 	* @Description: 根据id查询秒杀成功信息，并携带秒杀产品对象实体
 	* @param seckillId
+	* @param userPhone
 	* @throws Exception
 	* @return SuccessKilled
 	*/
