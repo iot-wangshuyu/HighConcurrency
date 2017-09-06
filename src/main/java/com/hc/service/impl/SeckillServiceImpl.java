@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
 import com.hc.dao.SeckillDao;
@@ -84,6 +85,12 @@ public class SeckillServiceImpl implements SeckillService {
 	}
 
 	@Override
+	@Transactional
+	//使用注解控制事务方法的优点：
+	//1：开发团队达成一致约定,明确标注事务方法的编程风格
+	//2:保证事务方法的执行时间尽可能短，不要穿插其他的网络操作。RPC/http请求或者剥离到事务方法外部
+	//3：不是所有的方法都需要事务,如只有一条修改操作，或者是只读操作不需要事务控制
+	//4：
 	public SeckillExecution executeSeckill(long seckillId, long userPhone, String md5)
 			throws SeckillException, RepeatKillException, SeckillCloseException {
 		if (md5 == null || !md5.equals(getMD5(seckillId))) {
@@ -113,7 +120,6 @@ public class SeckillServiceImpl implements SeckillService {
 			} catch (RepeatKillException e) {
 				throw e;
 			} catch (Exception e) {
-				// Log.d();
 				throw new SeckillException("秒杀业务异常" + e.getMessage());
 			}
 		}

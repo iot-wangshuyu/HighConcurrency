@@ -1,0 +1,134 @@
+[17:44:39:373] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[17:44:39:810] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[17:44:39:840] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[17:50:04:954] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[17:50:05:314] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[17:50:05:342] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[17:53:09:687] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[17:53:10:053] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[17:53:10:090] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:01:58:171] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:01:58:531] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:01:58:567] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:03:13:506] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:03:13:892] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:03:13:923] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:03:13:939] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:05:31:524] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:05:31:883] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:05:31:913] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:05:31:931] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:07:21:850] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:07:22:214] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:07:22:246] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:07:22:261] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:27:15:656] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:27:16:046] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:27:16:074] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:27:16:089] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:27:43:845] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:27:44:242] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:27:44:281] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:27:44:297] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:27:44:340] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill order by create_time desc limit ?,? 
+[18:27:44:341] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 0(Integer), 10(Integer)
+[18:27:44:385] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 4
+[18:31:22:725] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:31:23:092] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:31:23:117] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:31:23:131] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:31:23:166] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill order by create_time desc limit ?,? 
+[18:31:23:166] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 0(Integer), 10(Integer)
+[18:31:23:170] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 4
+[18:31:23:173] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update seckill set number=number-1 where seckill_id=? and start_time <= ? and end time >= ? and number>0; 
+[18:31:57:539] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:31:57:917] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:31:57:947] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:31:57:964] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:31:57:999] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill order by create_time desc limit ?,? 
+[18:31:57:999] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 0(Integer), 10(Integer)
+[18:31:58:003] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 4
+[18:31:58:006] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update seckill set number=number-1 where seckill_id=? and start_time <= ? and end time >= ? and number>0; 
+[18:31:58:007] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 2017-09-04 18:31:58.006(Timestamp), 2017-09-04 18:31:58.006(Timestamp)
+[18:34:20:395] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:34:20:829] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:34:20:861] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:34:20:878] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:34:20:915] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill order by create_time desc limit ?,? 
+[18:34:20:915] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 0(Integer), 10(Integer)
+[18:34:20:919] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 4
+[18:34:20:922] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update seckill set number=number-1 where seckill_id=? and start_time <= ? and end time >= ? and number>0; 
+[18:34:20:923] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 2017-09-04 18:34:20.922(Timestamp), 2017-09-04 18:34:20.922(Timestamp)
+[18:35:32:571] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:35:32:947] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill where seckill_id=? 
+[18:35:32:976] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:35:32:992] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:35:33:028] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select seckill_id,name,number,start_time,end_time,create_time from seckill order by create_time desc limit ?,? 
+[18:35:33:029] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 0(Integer), 10(Integer)
+[18:35:33:032] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 4
+[18:35:33:036] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: update seckill set number=number-1 where seckill_id=? and start_time <= ? and end_time >= ? and number>0; 
+[18:35:33:036] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 2017-09-04 18:35:33.035(Timestamp), 2017-09-04 18:35:33.035(Timestamp)
+[18:35:33:103] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+[18:40:30:644] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:40:31:025] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone) values (?,?) 
+[18:41:55:994] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:41:56:348] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone) values (?,?) 
+[18:41:56:377] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:41:56:444] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+[18:42:04:819] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:42:05:198] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone) values (?,?) 
+[18:42:05:221] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:42:05:222] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 0
+[18:44:51:988] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:44:52:349] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone) values (?,?) 
+[18:44:52:374] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:44:52:375] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 0
+[18:44:52:383] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select sk.seckill_id, sk.user_phone; sk.create_time, sk.state, s.seckill_id "seckill.seckill_id", s.name "seckill.name", s.number "seckill.number", s.start_time "seckill.start_time", s.end_time "seckill.end_time", s.create_time "seckill.create_time" from success_killed sk inner join seckill s on sk.seckill_id=s.seckill_id where sk.seckill_id=? 
+[18:44:52:383] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long)
+[18:46:23:816] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:46:24:183] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone) values (?,?) 
+[18:46:24:212] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:46:24:213] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 0
+[18:46:24:220] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select sk.seckill_id, sk.user_phone; sk.create_time, sk.state, s.seckill_id "seckill.seckill_id", s.name "seckill.name", s.number "seckill.number", s.start_time "seckill.start_time", s.end_time "seckill.end_time", s.create_time "seckill.create_time" from success_killed sk inner join seckill s on sk.seckill_id=s.seckill_id where sk.seckill_id=? and sk.user_phone=? 
+[18:46:24:221] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:47:54:742] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:47:55:100] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone) values (?,?) 
+[18:47:55:123] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:47:55:124] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 0
+[18:47:55:132] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select sk.seckill_id, sk.user_phone; sk.create_time, sk.state, s.seckill_id "seckill.seckill_id", s.name "seckill.name", s.number "seckill.number", s.start_time "seckill.start_time", s.end_time "seckill.end_time", s.create_time "seckill.create_time" from success_killed sk inner join seckill s on sk.seckill_id=s.seckill_id where sk.seckill_id=? and sk.user_phone=? 
+[18:47:55:132] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:49:19:516] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:49:19:884] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone) values (?,?) 
+[18:49:19:910] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:49:19:911] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 0
+[18:49:19:919] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select sk.seckill_id, sk.user_phone, sk.create_time, sk.state, s.seckill_id "seckill.seckill_id", s.name "seckill.name", s.number "seckill.number", s.start_time "seckill.start_time", s.end_time "seckill.end_time", s.create_time "seckill.create_time" from success_killed sk inner join seckill s on sk.seckill_id=s.seckill_id where sk.seckill_id=? and sk.user_phone=? 
+[18:49:19:920] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:49:19:927] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 0
+[18:54:57:480] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:54:57:864] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone) values (?,?) 
+[18:54:57:890] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:54:57:892] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 0
+[18:54:57:901] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select sk.seckill_id, sk.user_phone, sk.create_time, sk.state, s.seckill_id "seckill.seckill_id", s.name "seckill.name", s.number "seckill.number", s.start_time "seckill.start_time", s.end_time "seckill.end_time", s.create_time "seckill.create_time" from success_killed sk inner join seckill s on sk.seckill_id=s.seckill_id where sk.seckill_id=? and sk.user_phone=? 
+[18:54:57:902] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:54:57:925] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
+[18:57:39:172] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:57:39:551] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone,state) values (?,?,0) 
+[18:57:39:579] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:57:39:581] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 0
+[18:57:39:589] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select sk.seckill_id, sk.user_phone, sk.create_time, sk.state, s.seckill_id "seckill.seckill_id", s.name "seckill.name", s.number "seckill.number", s.start_time "seckill.start_time", s.end_time "seckill.end_time", s.create_time "seckill.create_time" from success_killed sk inner join seckill s on sk.seckill_id=s.seckill_id where sk.seckill_id=? and sk.user_phone=? 
+[18:57:39:590] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 2(Long), 12121205710(Long)
+[18:57:39:598] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 0
+[18:58:18:119] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:58:18:490] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone,state) values (?,?,0) 
+[18:58:18:514] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:58:18:515] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 0
+[18:58:18:523] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select sk.seckill_id, sk.user_phone, sk.create_time, sk.state, s.seckill_id "seckill.seckill_id", s.name "seckill.name", s.number "seckill.number", s.start_time "seckill.start_time", s.end_time "seckill.end_time", s.create_time "seckill.create_time" from success_killed sk inner join seckill s on sk.seckill_id=s.seckill_id where sk.seckill_id=? and sk.user_phone=? 
+[18:58:18:523] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 2(Long), 12121205711(Long)
+[18:58:18:530] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 0
+[18:58:42:295] [DEBUG] - org.apache.ibatis.logging.LogFactory.setImplementation(LogFactory.java:135) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[18:58:42:680] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: insert ignore into success_killed (seckill_id,user_phone,state) values (?,?,0) 
+[18:58:42:703] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 2(Long), 12121205710(Long)
+[18:58:42:753] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==    Updates: 1
+[18:58:42:782] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==>  Preparing: select sk.seckill_id, sk.user_phone, sk.create_time, sk.state, s.seckill_id "seckill.seckill_id", s.name "seckill.name", s.number "seckill.number", s.start_time "seckill.start_time", s.end_time "seckill.end_time", s.create_time "seckill.create_time" from success_killed sk inner join seckill s on sk.seckill_id=s.seckill_id where sk.seckill_id=? and sk.user_phone=? 
+[18:58:42:785] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - ==> Parameters: 1(Long), 12121205710(Long)
+[18:58:42:819] [DEBUG] - org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:142) - <==      Total: 1
