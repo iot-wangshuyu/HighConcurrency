@@ -38,6 +38,7 @@ var seckill = {
 				
 				$('#killPhoneBtn').click(function(){
 					var inputPhone=$('#killPhoneKey').val();
+					console.log('inputPhone='+inputPhone);//TODO
 					if(seckill.validatePhone(killPhone)){
 						//电话写入cookie
 						$.cookie('killPhone',inputPhone,{expiress:7,path:'/seckill'});
