@@ -2,15 +2,16 @@ var seckill = {
 	//封装秒杀相关地址
 	URL : {
             now:function(){
-            	return '/seckill/time/now';
+            	return 'localhost:8080/HighConcurrency/seckill/time/now';
             },
             exposer:function(seckillId){
-            	return '/seckill/'+seckillId+'/exposer';
+            	return 'localhost:8080/HighConcurrency/seckill/'+seckillId+'/exposer';
             },
             execution:function(seckillId,md5){
-            	return '/seckill/'+seckillId+'/'+md5+'/execution';
+            	return 'localhost:8080/HighConcurrency/seckill/'+seckillId+'/'+md5+'/execution';
             }
 	},
+	//验证手机号
 	validatePhone:function(phone){
 		if(phone&&phone.lenght==11&&!isNaN(phone)){
 			return true;
@@ -102,7 +103,7 @@ var seckill = {
 				//控制输出
 				
 				var killPhoneModal=$('#killPhoneModal');
-				killPhoneModal.moal({
+				killPhoneModal.modal({
 					
 					show:true,//显示弹出层
 					backdrop:'static',//禁止位置关闭
@@ -132,7 +133,7 @@ var seckill = {
 					var endTime=params['endTime'];
 					var seckillId=params['seckillId'];
 					//时间判断
-					
+					seckill.countdown(seckillId,timeNow,startTime,endTime);
 				}else{
 					console.log('result='+result);//TODO
 				}

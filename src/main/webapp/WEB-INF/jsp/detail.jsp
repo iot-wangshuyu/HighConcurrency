@@ -12,22 +12,20 @@
 <body>
 	<!-- 页面显示部分 -->
 	<div class="container">
-		<div class="panel panel-default">
-			<div class="panel-heading text-center">
-				<div class="panel-heading">
-					<h2>${sk.name}</h2>
-				</div>
-				<div class="panel-body">
-					<h2 class="text-danger">
-						<!-- 显示time图标 -->
-						<span class="glyphicon gluphicon-time"></span>
-						<!-- 显示倒计时-->
-						<span class="glyphicon" id="seckill-box"></span>
-					</h2>
+		<div class="panel panel-default text-center">
 
-				</div>
+			<div class="panel-heading">
+				<h2>${seckill.name}</h2>
 			</div>
 
+			<div class="panel-body">
+				<h2 class="text-danger">
+					<!-- 显示time图标 -->
+					<span class="glyphicon glyphicon-time"></span>
+					<!-- 显示倒计时-->
+					<span class="glyphicon" id="seckill-box"></span>
+				</h2>
+			</div>
 		</div>
 	</div>
 
@@ -39,20 +37,15 @@
 					<h3 class="modal-title text-center">
 						<span class="glyphicon glyphicon-phone"></span>
 					</h3>
-
 				</div>
-
 				<div class="modal-body">
 					<div class="row">
 						<div class="col-xs-8 col-xs-offset-2">
 							<input type="text" name="killPhone" id="killPhoneKey"
 								placeholder="填写手机号" class="form-control" />
-
 						</div>
 					</div>
-
 				</div>
-
 				<div class="modal-footer">
 					<!-- 验证信息 -->
 					<span id="killPhoneMessage" class="glyphicon"></span>
@@ -60,10 +53,8 @@
 						<span class="glyphicon glyphicon-phone"></span> Submit
 					</button>
 				</div>
-
 			</div>
 		</div>
-
 	</div>
 </body>
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -81,19 +72,16 @@
 	src="https://cdn.bootcss.com/jquery-countdown/2.0.1/jquery.countdown.js"></script>
 
 <!--编写交互逻辑  -->
-<script src="/resource/seckill.js" type="text/javascript"></script>
-<script type="text/javascript">
-	$(function(){
-		//使用EL表达式传入参数
-		seckill.detail.init({
-			seckillId:${seckill.seckillId},
-			startTime:${seckill.startTime.time},
-			endTime:${seckill.endTime.time}
-		
-			
-		});
+<script src="<%=basePath%>resource/js/seckill.js" type="text/javascript">
+  $(function(){
+	//使用EL表达式传入参数
+	seckill.detail.init({
+		seckillId:${seckill.seckillId},
+		startTime:${seckill.startTime.time},
+		endTime:${seckill.endTime.time}
 	});
-	
-	</script>
+  });
+</script>
+
 
 </html>
