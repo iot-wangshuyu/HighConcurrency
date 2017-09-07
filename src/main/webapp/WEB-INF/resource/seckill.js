@@ -19,7 +19,7 @@ var seckill = {
 		
 	},
 	countdown:function(seckillId,nowTime,startTime,endTime){
-		var seckillBox=${'#seckill-box'};
+		var seckillBox=$('#seckill-box');
 		//时间的判断 
 		if(nowTime>endTime){
 			//秒杀结束
