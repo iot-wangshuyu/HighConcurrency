@@ -92,6 +92,7 @@ var seckill = {
 	//详情页
 	detail : {
 		init:function(params){
+			console.log('params='+params);//TODO
 			//用户手机验证和登录，计时交互
 			//才cookie中查找手机号
 			var killPhone=$.cookie('killPhone');

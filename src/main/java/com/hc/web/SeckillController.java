@@ -21,6 +21,7 @@ import com.hc.enums.SeckillStateEnum;
 import com.hc.exception.RepeatKillException;
 import com.hc.exception.SeckillCloseException;
 import com.hc.service.SeckillService;
+import com.hc.utils.GsonUtil;
 import com.hc.utils.Log;
 
 
@@ -51,6 +52,7 @@ public class SeckillController {
 		
 		List<Seckill> seckillList = seckillService.getSeckillList();
 		model.addAttribute("list",seckillList);
+		Log.d("秒杀列表"+GsonUtil.GsonString(seckillList));
 		//获取列表页
 		return "list";
 		
@@ -73,7 +75,7 @@ public class SeckillController {
 			return "forward:/seckill/list";
 		}
 		model.addAttribute("seckill",byId);
-		
+		Log.d("秒杀详情"+GsonUtil.GsonString(byId));
 		return "detail";
 	}
 	/** 
@@ -93,6 +95,7 @@ public class SeckillController {
 			Log.e(e);
 			result=new SeckillResult<>(false, e.getMessage());
 		}
+		Log.d("获取秒杀地址"+GsonUtil.GsonString(result));
 		return result;
 		
 	}
@@ -127,6 +130,7 @@ public class SeckillController {
 			SeckillExecution seckillExecution = new SeckillExecution(seckillId, SeckillStateEnum.INNER_EROR);
 			result=new SeckillResult<SeckillExecution>(true, seckillExecution);
 		}
+		Log.d("执行秒杀操作"+GsonUtil.GsonString(result));
 		return result;
 	}
 	/** 
@@ -138,6 +142,7 @@ public class SeckillController {
 	@ResponseBody
 	public SeckillResult<Long> time(){
 		Date date=new Date();
+		Log.d("获取服务器当前时间"+date.getTime());
 		return new SeckillResult<Long>(true,date.getTime());
 	}
 

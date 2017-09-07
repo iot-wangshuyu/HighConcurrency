@@ -58,28 +58,26 @@
 	</div>
 </body>
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script
-	src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	src="https://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 <!-- jQuery获取cookie插件 -->
 <script
-	src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+	src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
 <script
-	src="https://cdn.bootcss.com/jquery-countdown/2.0.1/jquery.countdown.js"></script>
+	src="https://cdn.bootcss.com/jquery.countdown/2.1.0/jquery.countdown.min.js"></script>
 
 <!--编写交互逻辑  -->
 <script src="<%=basePath%>resource/js/seckill.js" type="text/javascript">
   $(function(){
 	//使用EL表达式传入参数
-	seckill.detail.init({
-		seckillId:${seckill.seckillId},
+	seckill.detail.init({seckillId:${seckill.seckillId},
 		startTime:${seckill.startTime.time},
-		endTime:${seckill.endTime.time}
-	});
+		endTime:${seckill.endTime.time}});
   });
 </script>
 
