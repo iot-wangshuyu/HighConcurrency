@@ -118,17 +118,22 @@ public class SeckillController {
 			result= new SeckillResult<SeckillExecution>(true,executeSeckill);
 		}catch (RepeatKillException e) {
 			SeckillExecution seckillExecution = new SeckillExecution(seckillId, SeckillStateEnum.REPEAT_KILL);
-			result=new SeckillResult<SeckillExecution>(false, seckillExecution);
+			result=new SeckillResult<SeckillExecution>(true, seckillExecution);
 		} catch (SeckillCloseException e) {
 			SeckillExecution seckillExecution = new SeckillExecution(seckillId, SeckillStateEnum.END);
-			result=new SeckillResult<SeckillExecution>(false, seckillExecution);
+			result=new SeckillResult<SeckillExecution>(true, seckillExecution);
 		}catch (Exception e) {
 			Log.e(e);
 			SeckillExecution seckillExecution = new SeckillExecution(seckillId, SeckillStateEnum.INNER_EROR);
-			result=new SeckillResult<SeckillExecution>(false, seckillExecution);
+			result=new SeckillResult<SeckillExecution>(true, seckillExecution);
 		}
 		return result;
 	}
+	/** 
+	* @Title: time 
+	* @Description: 获取服务器当前时间
+	* @return SeckillResult<Long>
+	*/
 	@RequestMapping(value="/time/now",method=RequestMethod.GET)
 	@ResponseBody
 	public SeckillResult<Long> time(){

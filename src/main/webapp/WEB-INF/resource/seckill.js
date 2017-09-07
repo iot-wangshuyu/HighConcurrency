@@ -6,6 +6,9 @@ var seckill = {
             },
             exposer:function(seckillId){
             	return '/seckill/'+seckillId+'/exposer';
+            },
+            execution:function(seckillId,md5){
+            	return '/seckill/'+seckillId+'/'+md5+'/execution';
             }
 	},
 	validatePhone:function(phone){
@@ -26,9 +29,34 @@ var seckill = {
 				var exposer=result['data'];
 				if(exposer['exposed']){
 					//开启秒杀
-					
+					//获取秒杀地址
+					var md5=exposer['md5'];
+					var killUrl=seckill.URL.execution(seckillId,md5);
+					console.log('killUrl='+killUrl);//TODO
+					//绑定一次点击事件
+					$('#killBtn').one('click',function(){
+						//执行秒杀请求的操作
+						//1:先禁用按钮
+						$(this).addClass('disabled');
+						//2：发送秒杀请求
+						$.post(killUrl,{},function(result){
+							if(result&&result['success']){
+								var killResult=result['data'];
+								var state=killResult['state'];
+								var stateInfo=killResult['stateInfo'];
+								//显示秒杀结果
+								node.html('<span class="label label-success">'+stateInfo+'</span>');
+							}
+						});
+					});
+					node.show();
 				}else{
 					//未开启秒杀
+					var now=exposer['now'];
+					var start=exposer['start'];
+					var end=exposer['end'];
+					//重新进入计时逻辑
+					seckill.countdown(seckillId,now,start,end);
 				}
 				
 			}else{
