@@ -1,7 +1,9 @@
 var seckill = {
 	//封装秒杀相关地址
 	URL : {
-
+            now:function(){
+            	return '/seckill/time/now';
+            }
 	},
 	validatePhone:function(phone){
 		if(phone&&phone.lenght==11&&!isNaN(phone)){
@@ -12,15 +14,40 @@ var seckill = {
 		}
 		
 	},
+	//处理秒杀逻辑
+	handlerSeckill:function(){
+		
+	},
+	countdown:function(seckillId,nowTime,startTime,endTime){
+		var seckillBox=${'#seckill-box'};
+		//时间的判断 
+		if(nowTime>endTime){
+			//秒杀结束
+			seckillBox.html('秒杀结束');
+		}else if(nowTime<startTime){
+			//秒杀未开始,/计时事件绑定
+			var killTime=new Date(startTime+1000);
+			
+			seckillBox.countdown(killTime,function(event){
+				//时间格式
+				var format=event.startTimt('秒杀倒计时：%D天 %H时 %M分 %S秒');
+				seckillBox.html(format);
+				//时间完成后回调事件
+			}).on('finish.countdown',function(){
+				//获取秒杀地址，控制显示逻辑，执行秒杀
+				seckill.handlerSeckill();
+			});
+		}else{
+			seckill.handlerSeckill();
+		}
+	},
 	//详情页
 	detail : {
 		init:function(params){
 			//用户手机验证和登录，计时交互
 			//才cookie中查找手机号
 			var killPhone=$.cookie('killPhone');
-			var startTime=params['startTime'];
-			var endTime=params['endTime'];
-			var seckillId=params['seckillId'];
+			
 			//验证手机号
 			
 			if(!seckill.validatePhone(killPhone)){
@@ -48,6 +75,21 @@ var seckill = {
 					}
 				});
 			}
+			//已经登录
+			//计时交互
+			$.get(seckill.URL.now(),{},function(result){
+				if(result&&result['success']){
+					var timeNow=result['data'];
+					
+					var startTime=params['startTime'];
+					var endTime=params['endTime'];
+					var seckillId=params['seckillId'];
+					//时间判断
+					
+				}else{
+					console.log('result='+result);//TODO
+				}
+			});
 		}
 
 	}
