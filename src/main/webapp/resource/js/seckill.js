@@ -116,7 +116,7 @@ var seckill = {
 					console.log('inputPhone='+inputPhone);//TODO
 					if(seckill.validatePhone(killPhone)){
 						//电话写入cookie
-						$.cookie('killPhone',inputPhone,{expiress:7,path:'/seckill'});
+						$.cookie('killPhone',inputPhone,{expiress:7,path:'localhost:8080/HighConcurrency/seckill'});
 						window.location.reload();
 					}else{
 						$('#killPhoneMessage').hide().html('<label class="label label-danger">手机号错误</label>').show(300);
