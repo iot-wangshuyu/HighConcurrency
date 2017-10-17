@@ -18,7 +18,6 @@ import java.io.Serializable;
 
 /**
  * 
- * @author Wenming.Huang
  * @date 2017-1-6
  */
 public class ReturnClass<T> implements Serializable {
