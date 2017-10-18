@@ -91,10 +91,9 @@ public class RedisUtil {
 	 */
 	@SuppressWarnings("deprecation")
 
-	public void returnResource(JedisPool pool, Jedis redis) {
-
-		if (redis != null && pool != null) {
-			pool.returnResource(redis);
+	public void returnResource(Jedis jedis) {
+		if (jedis != null && jedisPool != null) {
+			jedisPool.returnResource(jedis);
 			// pool.returnResourceObject(redis);
 
 		}

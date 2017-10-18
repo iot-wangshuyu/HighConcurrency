@@ -113,5 +113,23 @@ public interface RedisDao {
 	 * @return
 	 */
 	public List<String> getHashm(String key,String... fields);
+	
+
+	/** 
+	* @Title: login 
+	* @Description: TODO 
+	* @param  userId
+	* @param  second
+	* @return String ·µ»Øtoken
+	* @throws 
+	*/
+	public String login(String userId,int second);
+	
+	
+	public Boolean validate(String token);
+	
+	public void logout(String token);
+	
+	public String getUserId(String token);
 
 }
